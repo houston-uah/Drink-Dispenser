@@ -1,12 +1,9 @@
-@Filename: lab3
+@Filename: d_Dispense
 @Author: Houston Calvert
-@Email: hnc0006@uah.edu
-@Class: CS413-01 Fall 2019
-@Date: 10/7/2019
 @Purpose: Soft Drink Machine
-@as -o lab3.o lab3.s
-@gcc -o lab3 lab3.o
-@./lab3
+@as -o d_Dispense.o d_Dispense.s
+@gcc -o d_Dispense d_Dispense.o
+@./d_Dispense
 
 .global main
 main:
@@ -467,7 +464,7 @@ welcome1: .asciz "Welcome to a soft drink vending machine!\n"
 .balign 4
 welcome2: .asciz "The cost of coke, sprite, dr.pepper, diet coke, and mellow yellow is 55 cents\n"
 .balign 4
-instruct: .asciz "Ënter money nickel (N), dime (D), quarter (Q), dollar (B), or (X) to end\n"
+instruct: .asciz "Enter money nickel (N), dime (D), quarter (Q), dollar (B), or (X) to end\n"
 .balign 4
 input_wrong: .asciz "The input was wrong, please enter another value\n\n"
 .balign 4
@@ -514,11 +511,9 @@ confirmation5: .asciz "Are you sure you want a mellow yellow? Y/N \n"
 input1: .asciz "%s"
 in: .word 0
 
-
+//Sample execution
 
 /*
-pi@raspberrypi:~ $ ./lab3
-
 --------------------------------------------------------------------------------
 
 Welcome to a soft drink vending machine!

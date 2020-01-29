@@ -1,12 +1,9 @@
-@Filename: lab5.s
+@Filename: d_Dispense_Externals.s
 @Author: Houston Calvert
-@Email: hnc0006@uah.edu
-@Class: CS413-01 Fall 2019
-@Date: 11/6/2019
 @Purpose: Soft Drink Machine
-@as -o lab5.o lab5.s -lwiringPi
-@gcc -o lab5 lab5.o
-@sudo ./lab5
+@as -o d_Dispense_Externals.o d_Dispense_Externals.s -lwiringPi
+@gcc -o d_Dispense_Externals d_Dispense_Externals.o
+@sudo ./d_Dispense_Externals
 
 OUTPUT = 1
 .global main
